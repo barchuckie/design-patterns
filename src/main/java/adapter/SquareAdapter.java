@@ -4,7 +4,7 @@ public class SquareAdapter implements Shape {
 
     private Square square;
 
-    SquareAdapter(double side) {
+    public SquareAdapter(double side) {
         square = new Square(side);
     }
 
