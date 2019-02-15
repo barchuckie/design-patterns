@@ -1,6 +1,10 @@
-package builder;
+package builder.concrete;
 
-public class HTMLReportBuilder implements ReportBuilder {
+import builder.Report;
+import builder.ReportBuilder;
+import builder.concrete.ConcreteReport;
+
+public class ConcreteReportBuilder implements ReportBuilder {
     private StringBuilder builder = new StringBuilder();
 
     public void setCustomerName(String name) {
@@ -20,7 +24,7 @@ public class HTMLReportBuilder implements ReportBuilder {
     }
 
     public Report getReport() {
-        HTMLReport report = new HTMLReport();
+        ConcreteReport report = new ConcreteReport();
         report.putContent(builder.toString());
         return report;
     }

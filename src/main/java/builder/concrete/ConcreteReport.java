@@ -1,6 +1,8 @@
-package builder;
+package builder.concrete;
 
-public class HTMLReport implements Report {
+import builder.Report;
+
+public class ConcreteReport implements Report {
     private String content;
 
     public void putContent(String content) {
